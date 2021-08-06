@@ -6,6 +6,10 @@ import itemData from "../data/items";
 function App() {
   const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [newItem, setNewItem] = useState({
+    name: "",
+    category: "Produce",
+  })
 
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);

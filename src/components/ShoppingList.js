@@ -7,22 +7,8 @@ import { v4 as uuid } from "uuid";
 function ShoppingList({ items, onItemFormSubmit }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [search, setSearch] = useState("")
-  // const [currentItems, setCurrentItems] = useState(items)
-  const [newItem, setNewItem] = useState({
-    id: uuid(),
-    name: "",
-    category: "Produce",
-  })
-
-  // function handleFormChange(event) {
-
-  //   const name = event.target.name
-  //   const value = event.target.value
-  //   setNewItem({
-  //     ...newItem,
-  //     [name]: value
-  //   })
-  // }
+  
+  
 
 
   function handleSearchChange(e) {
