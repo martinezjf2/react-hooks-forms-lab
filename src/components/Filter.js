@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Filter({search, onCategoryChange, onSearchChange }) {
+function Filter({onCategoryChange, onSearchChange, search }) {
   // const [search, setSearch] = useState("")
   
   return (

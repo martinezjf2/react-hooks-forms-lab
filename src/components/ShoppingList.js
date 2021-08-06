@@ -12,7 +12,7 @@ function ShoppingList({ items, onItemFormSubmit }) {
 
 
   function handleSearchChange(e) {
-    e.preventDefault()
+    
     setSearch(e.target.value)
   }
 
@@ -24,7 +24,7 @@ function ShoppingList({ items, onItemFormSubmit }) {
     if (selectedCategory === "All") return true;
     return item.category === selectedCategory
   }).filter((item) => (
-    item.name.includes(search))
+    item.name.toLowerCase().includes(search.toLowerCase()))
   )
 
   return (
